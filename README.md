@@ -14,7 +14,7 @@
 ## groups テーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|strings|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users 
@@ -38,7 +38,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |text|text|
-|image|strings｜
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
