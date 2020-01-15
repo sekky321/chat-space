@@ -4,10 +4,11 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many :massages
+- has_many :messages
 - has_many :groups_users
+  has_many :groups
 
 
 ## groups テーブル
@@ -18,7 +19,7 @@
 ### Association
 - has_many :users
 - has_many :users, through: :members
-- has_many :messages has_many :members
+- has_many :messages, has_many :members
 
 
 ## groups_usersテーブル
@@ -36,7 +37,7 @@
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text|
 |image|strings｜
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
