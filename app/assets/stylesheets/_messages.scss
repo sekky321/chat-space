@@ -22,7 +22,6 @@
         justify-content: space-between;
         width: 100%;
         font-weight: bold;
-        // background-color: seagreen;
         height: 20px;
       
         &__right {
@@ -43,14 +42,12 @@
       background-color: #2f3e51;
       padding: 20px 20px 0;
 
-
       &__group {
         margin-bottom: 40px;
         color: #eeeeee;
         font-weight: bold;
         text-decoration: none;
-      
-
+        
         &__name {
           font-size: 15px;
           margin-bottom: 5px;
@@ -72,8 +69,6 @@
    width: calc(100vw - 300px);
    float: left;
 
-    
-    
     &__chat-main-group {
       height: 100px;
       padding: 0 40px;
@@ -105,17 +100,12 @@
         color: #38aef0;
       }
     }
-    
-    
-    
+
     &__chat-main-message-list {
       height: calc(100vh - 190px);
       background-color: #fafafa;
       overflow: scroll;
-
     }
-    
-    
     
     &__chat-main-message-form {
       height: 90px;
@@ -156,11 +146,5 @@
         padding: 0 30px;
       }
     }
-
-
-
-
   }
-
-  
 }
