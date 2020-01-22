@@ -1,0 +1,21 @@
+.side
+  .side__user-name
+    .side__user-name__name 
+      %p.side__user-name__name__left
+        masa
+      %ul.side__user-name__name__right
+        %li.side__user-name__name__1
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side__user-name__name__2
+          = link_to "#" do
+            = icon('fas','cog')
+          
+  .side__group-list
+    = link_to "#", class: "side__group-list__group" do
+      .side__group-list__group
+        %p.side__group-list__group__name
+          techcamp
+        %p.side__group-list__group__message
+          まだメッセージがありません
+

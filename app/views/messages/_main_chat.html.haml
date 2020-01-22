@@ -1,0 +1,22 @@
+.main
+
+  .main__chat-main-group
+    .main__chat-main-group__left
+      %h1.main__chat-main-group__left__top
+        test
+      %ul.main__chat-main-group__left__member-list
+        member :
+        %li.main__chat-main-group__left__member-list__member
+        j
+    = link_to "#" do
+      .main__chat-main-group__right
+        Edit
+  .main__chat-main-message-list
+  .main__chat-main-message-form
+    %form
+      %input.main__chat-main-message-form__message
+        .main__chat-main-message-form__mask
+          %label.main__chat-main-message-form__mask__image
+            = icon('fa','image',class: 'icon')
+            %input.hidden{type: 'file'}
+        %input.main__chat-main-message-form__submit{type: 'submit', value: 'Send'}
