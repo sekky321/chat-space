@@ -44,9 +44,13 @@
 
       &__group {
         margin-bottom: 40px;
-        color: #eeeeee;
+        color: white;
         font-weight: bold;
         text-decoration: none;
+        
+        a {
+          color: white;
+        }
         
         &__name {
           font-size: 15px;
