@@ -13,10 +13,11 @@
         Edit
   .main__chat-main-message-list
   .main__chat-main-message-form
-    %form
-      %input.main__chat-main-message-form__message
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'main__chat-main-message-form__message', placeholder: 'type a message'
         .main__chat-main-message-form__mask
-          %label.main__chat-main-message-form__mask__image
-            = icon('fa','image',class: 'icon')
-            %input.hidden{type: 'file'}
-        %input.main__chat-main-message-form__submit{type: 'submit', value: 'Send'}
+          = f.label :image, class: 'main__chat-main-message-form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'main__chat-main-message-form__submit'
