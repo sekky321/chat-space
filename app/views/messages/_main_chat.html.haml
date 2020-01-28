@@ -3,11 +3,13 @@
   .main__chat-main-group
     .main__chat-main-group__left
       %h1.main__chat-main-group__left__top
-        test
+        #{@group.name}
       %ul.main__chat-main-group__left__member-list
-        member :
-        %li.main__chat-main-group__left__member-list__member
-        j
+        Members :
+        - @group.users.each do |user|
+          %span.chat-header__user #{user.name}
+        -# %li.main__chat-main-group__left__member-list__member
+        
     = link_to "#" do
       .main__chat-main-group__right
         Edit
