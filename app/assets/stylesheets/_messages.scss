@@ -108,7 +108,12 @@
     &__chat-main-message-list {
       height: calc(100vh - 190px);
       background-color: #fafafa;
+      padding: 46px 40px;
       overflow: scroll;
+
+        .message {
+        padding-bottom: 40px;
+      }
     }
     
     &__chat-main-message-form {
