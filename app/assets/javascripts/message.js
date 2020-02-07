@@ -27,7 +27,7 @@ $(function(){
              ${message.user_name}
            </div>
            <div class="upper-message__date">
-             ${message.date}
+             ${message.created_at}
            </div>
          </div>
          <div class="lower-message">
@@ -54,12 +54,13 @@ $('#new_message').on('submit', function(e){
   .done(function(data){
     var html = buildHTML(data);
     $('.messages').append(html);
-    $('#message_content').val('')
     $('.main__chat-main-message-list').animate({ scrollTop: $('.main__chat-main-message-list')[0].scrollHeight});
     $(".main__chat-main-message-form__submit").prop('disabled', false);
+    $("form")[0].reset();
   })
   .fail(function() {
     alert("メッセージ送信に失敗しました");
+    $(".main__chat-main-message-form__submit").prop('disabled', false);
   });
 })
 
@@ -96,3 +97,4 @@ $('#new_message').on('submit', function(e){
     setInterval(reloadMessages, 7000);
     }
 });
+

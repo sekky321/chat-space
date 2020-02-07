@@ -46,10 +46,11 @@
         margin-bottom: 40px;
         color: white;
         font-weight: bold;
-        text-decoration: none;
+
         
         a {
           color: white;
+          text-decoration: none;
         }
         
         &__name {
@@ -105,6 +106,7 @@
         position: absolute;
         right: 40px;
         color: #38aef0;
+        text-decoration: none;
       }
     }
 
@@ -151,6 +153,7 @@
           float: left;
           height: 50px;
           width: calc(100% - 150px);
+          padding: 10px;
         }
 
       &__mask {
