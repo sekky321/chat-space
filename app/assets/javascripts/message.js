@@ -86,7 +86,7 @@ $('#new_message').on('submit', function(e){
       });
       //メッセージが入ったHTMLに、入れ物ごと追加
       $('.messages').append(insertHTML);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('.main__chat-main-message-list').animate({ scrollTop: $('.main__chat-main-message-list')[0].scrollHeight});
       }
     })
     .fail(function() {
